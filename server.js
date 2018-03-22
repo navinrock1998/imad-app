@@ -8,6 +8,9 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+app.get('/artcle1',function(req,res){
+res.send('artcle1 be  requestd will b srved')
+});
 
 app.get('/artcle2',function(req,res){
 res.send('artcle2 be  requestd will b srved')
